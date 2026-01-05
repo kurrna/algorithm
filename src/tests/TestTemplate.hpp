@@ -1,60 +1,66 @@
-#ifndef ALGORITHM_TESTTEMPLATE_HPP
-#define ALGORITHM_TESTTEMPLATE_HPP
+#ifndef ALGORITHM_YOURALGORITHMTEST_HPP
+#define ALGORITHM_YOURALGORITHMTEST_HPP
 
 #include "TestBase.hpp"
-// #include "../algorithms/YourAlgorithm.hpp"  // 包含你的算法头文件
+// #include "../algorithms/YourAlgorithm.hpp"
 
-/**
- * 算法测试模板类
- *
- * 使用步骤：
- * 1. 复制此文件并重命名为 YourAlgorithmTest.hpp
- * 2. 将所有 TestTemplate 替换为 YourAlgorithmTest
- * 3. 实现 run() 方法中的测试逻辑
- * 4. 更新 getName() 返回的名称
- * 5. 在 main.cpp 中注册你的测试类
- */
-class TestTemplate : public TestBase {
+class YourAlgorithmTest : public TestBase {
 public:
     void run() override {
-        printHeader("测试你的算法");
+        printHeader("测试YourAlgorithm算法");
+
+        TestStats stats;
 
         // 在这里添加你的测试用例
-        testCase1();
-        testCase2();
+        stats.recordResult(testCase1());
+        stats.recordResult(testCase2());
 
+        stats.printSummary("YourAlgorithm");
         printSeparator();
     }
 
     [[nodiscard]] std::string getName() const override {
-        return "YourAlgorithm";  // 修改为你的算法名称
+        return "YourAlgorithm";
     }
 
 private:
     // 测试用例1
-    static void testCase1() {
-        std::cout << "测试用例1：" << std::endl;
+    static bool testCase1() {
+        std::cout << "\n测试用例1：描述" << std::endl;
 
-        // 你的测试代码
-        // 例如：
-        // std::vector<int> input = {1, 2, 3, 4, 5};
-        // auto result = YourAlgorithm::solve(input);
-        // std::cout << "结果: " << result << std::endl;
+        // 示例：对于排序算法
+        // std::vector<int> input = {5, 2, 8, 1, 9};
+        // std::vector<int> expected = {1, 2, 5, 8, 9};
 
-        std::cout << std::endl;
+        // YourAlgorithm algo;
+        // std::vector<int> actual = input;
+        // algo.sort(actual);  // 或者其他方法名
+
+        // return assertVectorEquals(actual, expected, "测试用例1");
+
+        // 示例：对于返回单个值的算法
+        // int input = 5;
+        // int expected = 120;  // 例如阶乘
+
+        // YourAlgorithm algo;
+        // int actual = algo.calculate(input);
+
+        // return assertEquals(actual, expected, "测试用例1");
+
+        return true;  // 临时返回，替换为实际测试
     }
 
     // 测试用例2
-    static void testCase2() {
-        std::cout << "测试用例2：" << std::endl;
+    static bool testCase2() {
+        std::cout << "\n测试用例2：描述" << std::endl;
 
         // 你的测试代码
 
-        std::cout << std::endl;
+        return true;  // 临时返回，替换为实际测试
     }
 
     // 可以添加更多测试用例...
 };
 
-#endif //ALGORITHM_TESTTEMPLATE_HPP
+#endif //ALGORITHM_YOURALGORITHMTEST_HPP
 

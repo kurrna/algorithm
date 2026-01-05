@@ -1,22 +1,18 @@
 #include "./tests/TestManager.hpp"
 
 // 在这里包含更多测试类
-#include "tests/MergeSortTest.hpp"
+#include "tests/InsertionSortTest.hpp"
 
 int main() {
     // 获取测试管理器实例
-    const TestManager& manager = TestManager::getInstance();
+    TestManager& manager = TestManager::getInstance();
 
     // 注册所有测试
     // 注册更多测试（添加新算法时，只需在这里添加一行）
-    // manager.registerTest(std::make_shared<YourAlgorithmTest>());
+    manager.registerTest(std::make_shared<InsertionSortTest>());
 
     // 运行所有测试
     manager.runAll();
-
-    // 如果只想运行特定测试，可以使用：
-    // manager.runTest("QuickSort");
-    // manager.runTest("Dijkstra");
 
     return 0;
 }

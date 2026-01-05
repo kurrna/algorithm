@@ -2,7 +2,7 @@
 
 std::vector<int> Dijkstra::findShortestPath(const Graph& graph, int start) {
     const size_t n = graph.size();
-    std::vector<int> dist(n, std::numeric_limits<int>::max());
+    std::vector dist(n, std::numeric_limits<int>::max());
     std::priority_queue<Node, std::vector<Node>, std::greater<Node>> pq;
 
     dist[start] = 0;

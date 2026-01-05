@@ -12,8 +12,8 @@
 以下条目基于[课程讲义](./lists.txt)，按讲次/主题组织，带复选框以便跟踪进度。
 
 ## 排序与分治
-- [ ] 归并排序（MergeSort）
-- [x] 快速排序（QuickSort）
+- [x] [归并排序（MergeSort）](./src/algorithms/MergeSort.cpp)
+- [ ] 快速排序（QuickSort）
 - [ ] 堆排序（HeapSort）
 - [ ] 选择问题（Selection）
 - [ ] 分治中的求解递推式（Recurrences / Master Theorem）
@@ -78,4 +78,7 @@
 - [ ] 位运算技巧、双指针技巧
 - [ ] 匈牙利/二分匹配与一般匹配（Matching）
 - [ ] 最大流（Max Flow / Ford-Fulkerson / Edmonds-Karp / Dinic）
+
+## 其他算法
+- [x] [插入排序](./src/algorithms/InsertionSort.cpp)
 

@@ -2,3 +2,5 @@ cmake-build-*/
 *.md
 .idea/
 .vscode/
+25课件/
+*.pdf

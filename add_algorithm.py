@@ -31,12 +31,9 @@ def create_hpp_template(algorithm_name):
 
 class {algorithm_name} {{
 public:
-    static void run();
-
-    static void printResult();
-
+    
 private:
-    static void helper();
+    
 }};
 
 
@@ -71,9 +68,10 @@ public:
     void run() override {{
         printHeader("测试{algorithm_name}算法");
 
-        // 在这里添加你的测试用例
-        testCase1();
-        testCase2();
+        TestStats stats;
+        stats.recordResult(testCase1());
+        
+        stats.printSummary("{algorithm_name}");
 
         printSeparator();
     }}
@@ -83,29 +81,16 @@ public:
     }}
 
 private:
-    // 测试用例1
-    static void testCase1() {{
+    static bool testCase1() {{
         std::cout << "测试用例1：" << std::endl;
 
-        // 你的测试代码
-        // 例如：
-        // std::vector<int> input = {{1, 2, 3, 4, 5}};
-        // auto result = {algorithm_name}::solve(input);
-        // std::cout << "结果: " << result << std::endl;
-
-        std::cout << std::endl;
+        std::vector<int> input = {{}};
+        std::vector<int> expect = {{}};
+        auto actual = {algorithm_name}::solve(input);
+        
+        return assertVectorEquals(actual, expected);
     }}
 
-    // 测试用例2
-    static void testCase2() {{
-        std::cout << "测试用例2：" << std::endl;
-
-        // 你的测试代码
-
-        std::cout << std::endl;
-    }}
-
-    // 可以添加更多测试用例...
 }};
 
 #endif //ALGORITHM_{upper_name}TEST_HPP

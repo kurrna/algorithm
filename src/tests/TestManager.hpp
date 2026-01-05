@@ -24,13 +24,9 @@ public:
 
     // 运行所有测试
     void runAll() const {
-        printWelcome();
-
         for (const auto& test : tests) {
             test->run();
         }
-
-        printComplete();
     }
 
     // 运行指定测试
@@ -55,19 +51,6 @@ public:
 private:
     TestManager() = default;
     std::vector<std::shared_ptr<TestBase>> tests;
-
-    static void printWelcome() {
-        std::cout << "============================================" << std::endl;
-        std::cout << "            Kurna 的算法实现测试！             " << std::endl;
-        std::cout << "============================================" << std::endl;
-        std::cout << std::endl;
-    }
-
-    static void printComplete() {
-        std::cout << "============================================" << std::endl;
-        std::cout << "                 测试完成！                   " << std::endl;
-        std::cout << "============================================" << std::endl;
-    }
 };
 
 #endif //ALGORITHM_TESTMANAGER_HPP
