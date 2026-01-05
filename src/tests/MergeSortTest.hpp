@@ -2,12 +2,12 @@
 #define ALGORITHM_MERGESORTTEST_HPP
 
 #include "TestBase.hpp"
-#include "../algorithms/MergeSort.hpp"  // 包含你的算法头文件
+#include "../algorithms/MergeSort.hpp"
 
 class MergeSortTest : public TestBase {
 public:
     void run() override {
-        printHeader("测试你的算法");
+        printHeader("测试MergeSort算法");
 
         // 在这里添加你的测试用例
         testCase1();
@@ -17,7 +17,7 @@ public:
     }
 
     [[nodiscard]] std::string getName() const override {
-        return "MergeSort";  // 修改为你的算法名称
+        return "MergeSort";
     }
 
 private:
@@ -28,7 +28,7 @@ private:
         // 你的测试代码
         // 例如：
         // std::vector<int> input = {1, 2, 3, 4, 5};
-        // auto result = YourAlgorithm::solve(input);
+        // auto result = MergeSort::solve(input);
         // std::cout << "结果: " << result << std::endl;
 
         std::cout << std::endl;
@@ -47,4 +47,3 @@ private:
 };
 
 #endif //ALGORITHM_MERGESORTTEST_HPP
-
