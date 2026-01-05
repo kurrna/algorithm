@@ -66,6 +66,7 @@ private:
 
         std::vector<int> actual = input;
         sort(actual);
+        printVector(actual);
 
         return assertVectorEquals(actual, expected, "基本排序");
     }
@@ -79,6 +80,8 @@ private:
 
         std::vector<int> actual = input;
         sort(actual);
+        printVector(actual);
+
 
         return assertVectorEquals(actual, expected, "已排序数组");
     }
@@ -92,6 +95,7 @@ private:
 
         std::vector<int> actual = input;
         sort(actual);
+        printVector(actual);
 
         return assertVectorEquals(actual, expected, "逆序数组");
     }
@@ -105,6 +109,7 @@ private:
 
         std::vector<int> actual = input;
         sort(actual);
+        printVector(actual);
 
         return assertVectorEquals(actual, expected, "单个元素");
     }
@@ -118,6 +123,7 @@ private:
 
         std::vector<int> actual = input;
         sort(actual);
+        printVector(actual);
 
         return assertVectorEquals(actual, expected, "空数组");
     }
@@ -131,6 +137,7 @@ private:
 
         std::vector<int> actual = input;
         sort(actual);
+        printVector(actual);
 
         return assertVectorEquals(actual, expected, "重复元素");
     }
