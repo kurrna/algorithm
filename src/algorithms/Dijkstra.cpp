@@ -1,4 +1,4 @@
-#include "Dijkstra.h"
+#include "Dijkstra.hpp"
 
 std::vector<int> Dijkstra::findShortestPath(const Graph& graph, int start) {
     const size_t n = graph.size();

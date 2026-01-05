@@ -1,5 +1,5 @@
-#ifndef ALGORITHM_TEMPLATE_H
-#define ALGORITHM_TEMPLATE_H
+#ifndef ALGORITHM_TEMPLATE_HPP
+#define ALGORITHM_TEMPLATE_HPP
 
 #include <vector>
 #include <iostream>
@@ -21,5 +21,5 @@ private:
     static void helper();
 };
 
-#endif //ALGORITHM_TEMPLATE_H
+#endif //ALGORITHM_TEMPLATE_HPP
 

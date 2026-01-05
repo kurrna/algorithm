@@ -1,9 +1,9 @@
-#ifndef ALGORITHM_TESTMANAGER_H
-#define ALGORITHM_TESTMANAGER_H
+#ifndef ALGORITHM_TESTMANAGER_HPP
+#define ALGORITHM_TESTMANAGER_HPP
 
 #include <vector>
 #include <memory>
-#include "TestBase.h"
+#include "TestBase.hpp"
 
 /**
  * 测试管理器
@@ -70,5 +70,5 @@ private:
     }
 };
 
-#endif //ALGORITHM_TESTMANAGER_H
+#endif //ALGORITHM_TESTMANAGER_HPP
 

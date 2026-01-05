@@ -1,5 +1,5 @@
-#ifndef ALGORITHM_DIJKSTRA_H
-#define ALGORITHM_DIJKSTRA_H
+#ifndef ALGORITHM_DIJKSTRA_HPP
+#define ALGORITHM_DIJKSTRA_HPP
 
 #include <vector>
 #include <queue>
@@ -36,5 +36,5 @@ private:
     };
 };
 
-#endif //ALGORITHM_DIJKSTRA_H
+#endif //ALGORITHM_DIJKSTRA_HPP
 

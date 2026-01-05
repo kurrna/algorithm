@@ -1,9 +1,7 @@
-#include <iostream>
-#include <memory>
-#include "./tests/TestManager.h"
+#include "./tests/TestManager.hpp"
 
 // 在这里包含更多测试类
-// #include "tests/YourAlgorithmTest.h"
+#include "tests/MergeSortTest.hpp"
 
 int main() {
     // 获取测试管理器实例

@@ -13,12 +13,12 @@ file(GLOB ALGORITHM_SOURCES
 
 # 收集所有算法头文件
 file(GLOB ALGORITHM_HEADERS
-        "src/algorithms/*.h"
+        "src/algorithms/*.hpp"
 )
 
 # 收集所有测试头文件
 file(GLOB TEST_HEADERS
-        "src/tests/*.h"
+        "src/tests/*.hpp"
 )
 
 # 创建可执行文件

@@ -1,8 +1,8 @@
-#ifndef ALGORITHM_DIJKSTRATEST_H
-#define ALGORITHM_DIJKSTRATEST_H
+#ifndef ALGORITHM_DIJKSTRATEST_HPP
+#define ALGORITHM_DIJKSTRATEST_HPP
 
-#include "TestBase.h"
-#include "../algorithms/Dijkstra.h"
+#include "TestBase.hpp"
+#include "../algorithms/Dijkstra.hpp"
 #include <vector>
 
 /**
@@ -68,5 +68,5 @@ private:
     }
 };
 
-#endif //ALGORITHM_DIJKSTRATEST_H
+#endif //ALGORITHM_DIJKSTRATEST_HPP
 

@@ -1,5 +1,5 @@
-#ifndef ALGORITHM_TESTBASE_H
-#define ALGORITHM_TESTBASE_H
+#ifndef ALGORITHM_TESTBASE_HPP
+#define ALGORITHM_TESTBASE_HPP
 
 #include <iostream>
 #include <string>
@@ -30,5 +30,5 @@ protected:
     }
 };
 
-#endif //ALGORITHM_TESTBASE_H
+#endif //ALGORITHM_TESTBASE_HPP
 
