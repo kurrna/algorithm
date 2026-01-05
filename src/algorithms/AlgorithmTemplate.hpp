@@ -2,7 +2,6 @@
 #define ALGORITHM_TEMPLATE_HPP
 
 #include <vector>
-#include <iostream>
 
 /**
  * 算法模板类
@@ -11,14 +10,10 @@
 class AlgorithmTemplate {
 public:
     // 公共接口方法
-    static void run();
-
-    // 打印结果
-    static void printResult();
+    static void solve();
 
 private:
     // 私有辅助方法
-    static void helper();
 };
 
 #endif //ALGORITHM_TEMPLATE_HPP

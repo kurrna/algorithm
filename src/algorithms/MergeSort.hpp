@@ -9,12 +9,12 @@
 
 class MergeSort {
 public:
-    static void run();
-
-    static void printResult();
+    static void solve(std::vector<int>& vec);
 
 private:
-    static void helper();
+    static void merge(std::vector<int>& vec, int left, int mid, int right);
+
+    static void mergeSort(std::vector<int>& vec, int left, int right);
 };
 
 
