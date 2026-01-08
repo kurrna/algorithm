@@ -85,7 +85,7 @@ private:
         std::cout << "测试用例1：" << std::endl;
 
         std::vector<int> input = {{}};
-        std::vector<int> expect = {{}};
+        std::vector<int> expected = {{}};
         auto actual = {algorithm_name}::solve(input);
         
         return assertVectorEquals(actual, expected);

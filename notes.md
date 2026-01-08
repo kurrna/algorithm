@@ -128,8 +128,15 @@
 #### Lecture04_Maximum_Contiguous_Subarray
 
 - [最大子数组](./src/algorithms/MaximumContiguousSubarray.cpp)：最大子数组之和=max(以A[mid]结尾的最大子数组之和+以A[mid+1]开头的最大子数组之和，LEFT部分最大子数组，RIGHT部分最大子数组)
-  - 时间复杂度：$O(n\log(n))$
+  - **分治法**：$O(n\log(n))$
+  - 动态规划：$O(n)$
+  - 空间复杂度：$O(1)$
 
 ---
 
-#### Lecture05_
+#### Lecture05_Counting_Inversion
+
+- [逆序对计数](./src/algorithms/Counting_Inversion.cpp)：逆序对总数[1, n] = max(逆序对总数[1, mid], 逆序对总数[mid+1, n], 跨越mid的逆序对数目)，
+- 计算跨越mid的逆序对数目，在合并时对数组进行归并排序的同时计算逆序对数目。
+  - 分治法：$O(n\log(n))$
+  - 空间复杂度：$O(n)
