@@ -153,13 +153,17 @@
 
 #### Lecture07_Quicksort
 
-- [快速排序](./src/algorithms/QuickSort.cpp)：与归并排序相比，侧重分解，并且不需要额外的空间且缓存友好。使用最简单的优化方式：随机选取主元。
+- [快速排序](./src/algorithms/QuickSort.cpp)算法（不稳定排序）
+  - 与归并排序相比，侧重分解，并且不需要额外的空间且缓存友好。使用最简单的优化方式：随机选取主元。
   - 最好情况：$O(nlog(n))$
   - 最坏情况：$O(n^2)$
-  - 随机主元法期望时间复杂度：$O(nlog(n))$
+  - 随机主元期望时间复杂度：$O(nlog(n))$
 
 ---
 
 #### Lecture08_Selection_Problem
 
-- 
+- [次序选择问题](./src/algorithms/SelectionProblem.cpp)：求数组中第k小的元素，不必对所有元素排序，选取一个主元进行位置划分后左边的元素有$pivotIdx - start$个，若$k-1 < pivotIdx - start + 1$，则数组第k小元素在左边，若大于则在右边。
+  - 最好情况：$O(n)$
+  - 最坏情况：$O(n^2)$
+  - 随机主元期望时间复杂度：$O(n)$
