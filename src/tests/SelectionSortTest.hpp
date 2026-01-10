@@ -14,7 +14,7 @@ protected:
         SelectionSort::solve(vec);
     }
 
-    [[nodiscard]] std::string getAlgorithmName() const override {
+    [[nodiscard]] std::string getName() const override {
         return "SelectionSort";
     }
 

@@ -23,7 +23,7 @@
 class SortTest : public TestBase {
 public:
     void run() override {
-        std::string algorithmName = getAlgorithmName();
+        std::string algorithmName = getName();
         printHeader("测试" + algorithmName + "算法");
 
         TestStats stats;
@@ -40,10 +40,6 @@ public:
         printSeparator();
     }
 
-    [[nodiscard]] std::string getName() const override {
-        return getAlgorithmName();
-    }
-
 protected:
     /**
      * 子类必须实现的排序方法
@@ -54,7 +50,7 @@ protected:
     /**
      * 子类必须实现的算法名称获取方法
      */
-    [[nodiscard]] virtual std::string getAlgorithmName() const = 0;
+    [[nodiscard]] std::string getName() const override = 0;
 
 private:
     // 测试用例1：基本排序（用户提供的样例）

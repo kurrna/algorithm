@@ -14,7 +14,7 @@
 ## 排序与分治
 - [x] [归并排序（MergeSort）](./src/algorithms/MergeSort.cpp)
 - [x] [快速排序（QuickSort）](./src/algorithms/QuickSort.cpp)
-- [ ] 堆排序（HeapSort）
+- [x] [堆排序（HeapSort）](./src/algorithms/HeapSort.cpp)
 - [x] [选择问题（Selection）](./src/algorithms/SelectionProblem.cpp)
 - [x] [分治中的求解递推式（Recurrences / Master Theorem）](./notes.md)
 
@@ -54,6 +54,7 @@
 - [ ] Kruskal 最小生成树（Kruskal）
 
 ## 其他核心主题
+- [x] [计数排序（Counting Sort）](./src/algorithms/CountingSort.cpp)
 - [ ] 布尔与复杂度（P vs NP / NP-Complete）
 - [ ] 最终复习/综合题目（Final Review）
 

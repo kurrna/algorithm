@@ -11,7 +11,7 @@ public:
         QuickSort::solve(vec);
     }
 
-    [[nodiscard]] std::string getAlgorithmName() const override {
+    [[nodiscard]] std::string getName() const override {
         return "QuickSort";
     }
 
