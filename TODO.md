@@ -13,18 +13,18 @@
 
 ## 排序与分治
 - [x] [归并排序（MergeSort）](./src/algorithms/MergeSort.cpp)
-- [ ] 快速排序（QuickSort）
+- [x] 快速排序（QuickSort）
 - [ ] 堆排序（HeapSort）
 - [ ] 选择问题（Selection）
-- [ ] 分治中的求解递推式（Recurrences / Master Theorem）
+- [x] 分治中的求解递推式（Recurrences / Master Theorem）
 
 ## 子数组 / 分治应用
-- [ ] 最大子数组问题（Maximum Contiguous Subarray）
+- [x] 最大子数组问题（Maximum Contiguous Subarray）
 - [ ] 最大子数组（进阶/第二讲，MaxSubArrayII）
-- [ ] 计数逆序对（Counting Inversion）
+- [x] 计数逆序对（Counting Inversion）
 
 ## 数学与代数工具
-- [ ] 多项式乘法（Polynomial Multiplication）
+- [ ] *多项式乘法（Polynomial Multiplication）
 - [ ] 矩阵乘法与优化（Matrix Multiplication / 矩阵链乘法）
 
 ## 贪心与动态规划基础
