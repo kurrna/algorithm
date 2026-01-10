@@ -235,3 +235,13 @@
 - [最长公共子串问题](./src/algorithms/LongestCommonSubstring.cpp)
   - 与最大公共子序列不同的是不需要求解子问题
   - 时间复杂度：$O(n * m)$
+
+---
+
+#### Lecture14_MED
+
+- [编辑距离问题](./src/algorithms/MinimumEditDistance.cpp)
+  - 使用$Rec[i,j]$保存子问题来源，上侧"U"则操作为删除s[i]，左侧"L"则操作为插入t[j]，对角线"D"则为用t[j]替换s[i]。最后根据数组Rec输出最少编辑操作。
+  - 时间复杂度：$O(n * m)$
+
+---
