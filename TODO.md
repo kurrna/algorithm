@@ -32,7 +32,8 @@
 - [ ] 霍夫曼编码（Huffman Coding）
 - [ ] 分数背包（Fractional Knapsack）
 - [x] [0-1 背包（0-1 Knapsack）](./src/algorithms/ZeroOneKnapsack.cpp)
-- [x] [最小编辑距离（Minimum Edit Distance）](./src/algorithms/MinimumEditD)
+- [x] [最小编辑距离（Minimum Edit Distance）](./src/algorithms/MinimumEditDistance.cpp)
+- [x] [钢条切割（Rod Cutting）](./src/algorithms/RodCutting.cpp)
 
 ## 字符串与检索
 - [x] [最长公共子序列（LCS）](./src/algorithms/LongestCommonSequence.cpp)

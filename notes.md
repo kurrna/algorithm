@@ -245,3 +245,12 @@
   - 时间复杂度：$O(n * m)$
 
 ---
+
+#### Lecture15_RodCutting
+
+- [钢条切割问题](./src/algorithms/RodCutting.cpp)
+  - 输入钢条价格表$p[1\ldots n]$，输出最大收益$C[n]$与钢条切割方案
+  - 使用rec[i]记录长度为i的钢条切割的第一段应该是多少
+  - 时间复杂度：$O(n^2)$
+
+​	
