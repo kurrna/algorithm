@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_SELECTIONPROBLEMTEST_HPP
 #define ALGORITHM_SELECTIONPROBLEMTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/SelectionProblem.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DevideConquer/SelectionProblem.hpp"
 
 class SelectionProblemTest : public TestBase {
 public:

@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/10.
 //
 
-#include "QuickSort.hpp"
+#include "../QuickSort.hpp"
 #include <cstdlib>
 
 void QuickSort::solve(std::vector<int> &vec) {

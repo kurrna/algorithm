@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_POLYNOMIALMULTIPLICATIONTEST_HPP
 #define ALGORITHM_POLYNOMIALMULTIPLICATIONTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/PolynomialMultiplication.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DevideConquer/PolynomialMultiplication.hpp"
 
 class PolynomialMultiplicationTest : public TestBase {
 public:

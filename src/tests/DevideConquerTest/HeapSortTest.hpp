@@ -1,9 +1,9 @@
 #ifndef ALGORITHM_HEAPSORTTEST_HPP
 #define ALGORITHM_HEAPSORTTEST_HPP
 
-#include "SortTest.hpp"
-#include "TestBase.hpp"
-#include "src/algorithms/HeapSort.hpp"
+#include "../SortTest.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DevideConquer/HeapSort.hpp"
 
 class HeapSortTest : public SortTest {
 public:

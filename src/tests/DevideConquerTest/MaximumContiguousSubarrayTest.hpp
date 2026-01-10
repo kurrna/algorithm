@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_MAXIMUMCONTIGUOUSSUBARRAYTEST_HPP
 #define ALGORITHM_MAXIMUMCONTIGUOUSSUBARRAYTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/MaximumContiguousSubarray.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DevideConquer/MaximumContiguousSubarray.hpp"
 
 class MaximumContiguousSubarrayTest : public TestBase {
 public:

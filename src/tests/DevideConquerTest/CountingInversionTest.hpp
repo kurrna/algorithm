@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_COUNTINGINVERSIONTEST_HPP
 #define ALGORITHM_COUNTINGINVERSIONTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/CountingInversion.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DevideConquer/CountingInversion.hpp"
 
 class CountingInversionTest : public TestBase {
 public:

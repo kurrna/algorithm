@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_MERGESORTTEST_HPP
 #define ALGORITHM_MERGESORTTEST_HPP
 
-#include "SortTest.hpp"
-#include "../algorithms/MergeSort.hpp"
+#include "../SortTest.hpp"
+#include "../../algorithms/DevideConquer/MergeSort.hpp"
 
 /**
  * 归并排序测试

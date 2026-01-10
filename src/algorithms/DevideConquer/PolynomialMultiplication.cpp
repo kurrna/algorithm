@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/8.
 //
 
-#include "PolynomialMultiplication.hpp"
+#include "../PolynomialMultiplication.hpp"
 #include <algorithm>
 #include <cmath>
 

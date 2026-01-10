@@ -1,9 +1,9 @@
 #ifndef ALGORITHM_QUICKSORTTEST_HPP
 #define ALGORITHM_QUICKSORTTEST_HPP
 
-#include "SortTest.hpp"
-#include "TestBase.hpp"
-#include "../algorithms/QuickSort.hpp"
+#include "../SortTest.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DevideConquer/QuickSort.hpp"
 
 class QuickSortTest : public SortTest {
 public:

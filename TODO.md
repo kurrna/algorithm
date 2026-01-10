@@ -12,16 +12,16 @@
 以下条目基于[课程讲义](./lists.txt)，按讲次/主题组织，带复选框以便跟踪进度。
 
 ## 排序与分治
-- [x] [归并排序（MergeSort）](./src/algorithms/MergeSort.cpp)
-- [x] [快速排序（QuickSort）](./src/algorithms/QuickSort.cpp)
-- [x] [堆排序（HeapSort）](./src/algorithms/HeapSort.cpp)
-- [x] [选择问题（Selection）](./src/algorithms/SelectionProblem.cpp)
+- [x] [归并排序（MergeSort）](src/algorithms/DevideConquer/MergeSort.cpp)
+- [x] [快速排序（QuickSort）](src/algorithms/DevideConquer/QuickSort.cpp)
+- [x] [堆排序（HeapSort）](src/algorithms/DevideConquer/HeapSort.cpp)
+- [x] [选择问题（Selection）](src/algorithms/DevideConquer/SelectionProblem.cpp)
 - [x] [分治中的求解递推式（Recurrences / Master Theorem）](./notes.md)
 
 ## 子数组 / 分治应用
-- [x] [最大子数组问题（Maximum Contiguous Subarray）](./src/algorithms/MaximumContiguousSubarray.cpp)
+- [x] [最大子数组问题（Maximum Contiguous Subarray）](src/algorithms/DevideConquer/MaximumContiguousSubarray.cpp)
 - [ ] 最大子数组（进阶/第二讲，MaxSubArrayII）
-- [x] [计数逆序对（Counting Inversion）](./src/algorithms/CountingInversion.cpp)
+- [x] [计数逆序对（Counting Inversion）](src/algorithms/DevideConquer/CountingInversion.cpp)
 
 ## 数学与代数工具
 - [x] *多项式乘法（Polynomial Multiplication）
@@ -82,4 +82,5 @@
 
 ## 其他算法
 - [x] [插入排序](./src/algorithms/InsertionSort.cpp)
+- [x] [选择排序](./src/algorithms/SelectionSort.cpp)
 
