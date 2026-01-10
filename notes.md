@@ -105,7 +105,7 @@
     | --------------------------------- | ------------------------------------ |
       | $T(n) = \Theta(f(n))$             | $f(n)=\Omega(n^{log_b(a+\epsilon)})$ |
     | $T(n)=\Theta(n^{log_b(a)}log(n))$ | $f(n)=\Theta(n^{log_b(a)})$          |
-      | $T(n)=\Theta(n^{log_b(a)})$       | $f(n) = O(n_{log_b(a-\epsilon)})$    |
+      | $T(n)=\Theta(n^{log_b(a)})$       | $f(n) = O(n^{log_b(a-\epsilon)})$    |
   
     - 若$f(n) = n^k$，则有如下简化形式：
     
@@ -129,8 +129,8 @@
 
 - [最大子数组](./src/algorithms/MaximumContiguousSubarray.cpp)：最大子数组之和=max(以A[mid]结尾的最大子数组之和+以A[mid+1]开头的最大子数组之和，LEFT部分最大子数组，RIGHT部分最大子数组)
   - **分治法**：$O(n\log(n))$
-  - 动态规划：$O(n)$
   - 空间复杂度：$O(1)$
+  - 【更快的算法】动态规划：$O(n)$
 
 ---
 
@@ -139,4 +139,12 @@
 - [逆序对计数](./src/algorithms/Counting_Inversion.cpp)：逆序对总数[1, n] = max(逆序对总数[1, mid], 逆序对总数[mid+1, n], 跨越mid的逆序对数目)，
 - 计算跨越mid的逆序对数目，在合并时对数组进行归并排序的同时计算逆序对数目。
   - 分治法：$O(n\log(n))$
-  - 空间复杂度：$O(n)
+  - 空间复杂度：$O(n)$
+
+---
+
+#### Lecture06_Polynomial_Multiplication
+
+- 多项式乘法：将系数数组A和B根据指数$\frac{n}{2}$的大小关系分别划分为两个子数组$A_0$，$A_1 * x^\frac{n}{2}$和$B_0$，$B_1 * \frac{n}{2}$，递归三次分别求解$A_0B_0$，$(A_0 + A_1)(B_0 + B_1)$，$A_1B_1$。这样两个交叉项可由三个结果计算出来。
+  - 改进的分治法：$O(n^{\log(3)})$
+  - 【更快的算法】快速傅里叶变换：$O(n\log(n))$
