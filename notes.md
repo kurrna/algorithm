@@ -77,9 +77,11 @@
 
 ----
 
+### 一、分而治之篇
+
 #### Lecture02_MergeSort & Lecture03_Solving_Recurrences
 
-- [归并排序](./src/algorithms/MergeSort.cpp)算法（稳定排序）
+- [归并排序](src/algorithms/DevideConquer/MergeSort.cpp)算法（稳定排序）
 
   - 基于分治，拆$\log_2(n)$次，合并时从左到右扫描，需要额外空间存储合并过程
   - 时间复杂度：$O(n\log(n))$
@@ -127,7 +129,7 @@
 
 #### Lecture04_Maximum_Contiguous_Subarray
 
-- [最大子数组](./src/algorithms/MaximumContiguousSubarray.cpp)：最大子数组之和=max(以A[mid]结尾的最大子数组之和+以A[mid+1]开头的最大子数组之和，LEFT部分最大子数组，RIGHT部分最大子数组)
+- [最大子数组](src/algorithms/DevideConquer/MaximumContiguousSubarray.cpp)：最大子数组之和=max(以A[mid]结尾的最大子数组之和+以A[mid+1]开头的最大子数组之和，LEFT部分最大子数组，RIGHT部分最大子数组)
   - **分治法**：$O(n\log(n))$
   - 空间复杂度：$O(1)$
   - 【更快的算法】动态规划：$O(n)$
@@ -153,7 +155,7 @@
 
 #### Lecture07_Quicksort
 
-- [快速排序](./src/algorithms/QuickSort.cpp)算法（不稳定排序）
+- [快速排序](src/algorithms/DevideConquer/QuickSort.cpp)算法（不稳定排序）
   - 与归并排序相比，侧重分解，并且不需要额外的空间且缓存友好。使用最简单的优化方式：随机选取主元。
   - 最好情况：$O(nlog(n))$
   - 最坏情况：$O(n^2)$
@@ -163,7 +165,7 @@
 
 #### Lecture08_Selection_Problem
 
-- [次序选择问题](./src/algorithms/SelectionProblem.cpp)：求数组中第k小的元素，不必对所有元素排序，选取一个主元进行位置划分后左边的元素有$pivotIdx - start$个，若$k-1 < pivotIdx - start + 1$，则数组第k小元素在左边，若大于则在右边。
+- [次序选择问题](src/algorithms/DevideConquer/SelectionProblem.cpp)：求数组中第k小的元素，不必对所有元素排序，选取一个主元进行位置划分后左边的元素有$pivotIdx - start$个，若$k-1 < pivotIdx - start + 1$，则数组第k小元素在左边，若大于则在右边。
   - 最好情况：$O(n)$
   - 最坏情况：$O(n^2)$
   - 随机主元期望时间复杂度：$O(n)$
@@ -179,7 +181,7 @@
   - 使用数组实现：对于每个元素$a[i]$，其左孩子下标$2i+1$，右孩子下标$2i + 2$，父节点下标为$\lfloor \frac{n}{2} \rfloor$
   - 插入Insert：若父节点大于当前节点则不断向上冒泡直到满足最小堆的有序性
   - 最小值出队Extract-Min：直接移除根节点，将最后一个节点复制道跟节点，不断向下冒泡直到满足最小堆的有序性（与值较小的孩子节点进行交换）
-- [堆排序](./src/algorithms/HeapSort.cpp)算法（不稳定排序）
+- [堆排序](src/algorithms/DevideConquer/HeapSort.cpp)算法（不稳定排序）
   - 建立一个有n个节点的二叉堆（更有效的建堆方法$O(n)$），执行n次Extract-Min操作。
   - 时间复杂度：$O(nlog(n))$
   - 空间复杂度：$O(1)$
@@ -190,3 +192,25 @@
   - 对于元素x，确定小于x的元素的数量i，将x放在输出数组的i+1位置
   - 时间复杂度：$O(n + k)$
   - 空间复杂度：$O(n + k)$
+
+---
+
+### 二、动态规划篇
+
+#### Lecture10_0-1_Knapsack
+
+- 0-1背包问题
+  - 输入：n个商品组成集合O，每个商品有两个属性$v_i$和$p_i$，分别表示体积和价格；背包容量为C
+  - 输出：求解一个商品子集，总价值最高且容量小于C
+  - 蛮力枚举：$O(2^n)$
+  - 带缓存递归：自顶向下，在递归过程求解
+  - 递推求解：自底向上，$O(nC)$
+- 动态规划一般步骤
+  - 问题分析：$P[n, C]$：前$n$个商品可选、背包剩余容量为$C$时的最大总价格
+  - 递推关系：$P[i, c] = max\{P[i - 1, c], P[i - 1, c - v_i] + p_i\}$
+    - 分析最优子结构：问题的最优解由相关子问题最优解组合而成，子问题可以独立求解
+  - 自底向上：初始化$P[i, 0] = 0, P[0, c] = 0$，依次求解问题
+  - 决策过程：回溯追踪最优方案，使用$Rec[i, c]$记录决策过程
+
+---
+

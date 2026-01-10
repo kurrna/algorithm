@@ -31,7 +31,7 @@
 - [ ] 活动选择问题（Activity Selection）
 - [ ] 霍夫曼编码（Huffman Coding）
 - [ ] 分数背包（Fractional Knapsack）
-- [ ] 0-1 背包（0-1 Knapsack）
+- [x] 0-1 背包（0-1 Knapsack）
 - [ ] 编辑距离（Edit Distance）
 
 ## 字符串与检索
@@ -69,7 +69,7 @@
 - [ ] 并查集（Union-Find）
 - [ ] 线段树（Segment Tree）
 - [ ] 字典树（Trie）
-- [ ] 堆（实现细节与优先队列进阶）
+- [x] 堆（实现细节与优先队列进阶）
 
 ## 算法进阶
 - [ ] KMP 字符串匹配（KMP）
