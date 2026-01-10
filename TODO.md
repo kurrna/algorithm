@@ -20,7 +20,7 @@
 
 ## 子数组 / 分治应用
 - [x] [最大子数组问题（Maximum Contiguous Subarray）](src/algorithms/DevideConquer/MaximumContiguousSubarray.cpp)
-- [ ] 最大子数组（进阶/第二讲，MaxSubArrayII）
+- [x] [最大子数组（动态规划，MaxSubArrayII）](.src/algorithms/MaxSubArray.cpp)
 - [x] [计数逆序对（Counting Inversion）](src/algorithms/DevideConquer/CountingInversion.cpp)
 
 ## 数学与代数工具
@@ -31,11 +31,11 @@
 - [ ] 活动选择问题（Activity Selection）
 - [ ] 霍夫曼编码（Huffman Coding）
 - [ ] 分数背包（Fractional Knapsack）
-- [x] 0-1 背包（0-1 Knapsack）
+- [x] [0-1 背包（0-1 Knapsack）](./src/algorithms/ZeroOneKnapsack.cpp)
 - [ ] 编辑距离（Edit Distance）
 
 ## 字符串与检索
-- [ ] 最长公共子序列（LCS）
+- [x] [最长公共子序列（LCS）](./src/algorithms/LongestCommonSequence.cpp)
 - [ ] 最长公共子串（Longest Common Substring）
 
 ## 图算法（核心）
