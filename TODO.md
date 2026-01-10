@@ -25,7 +25,7 @@
 
 ## 数学与代数工具
 - [x] *多项式乘法（Polynomial Multiplication）
-- [ ] 矩阵乘法与优化（Matrix Multiplication / 矩阵链乘法）
+- [x] [矩阵链乘法（Matrix Chain Mul）](./src/algorithms/MatrixChainMul.cpp)
 
 ## 贪心与动态规划基础
 - [ ] 活动选择问题（Activity Selection）

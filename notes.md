@@ -253,4 +253,16 @@
   - 使用rec[i]记录长度为i的钢条切割的第一段应该是多少
   - 时间复杂度：$O(n^2)$
 
+---
+
+#### Lecture16_MatrixMul
+
+- [矩阵链乘法（Matrix Chain Mul）](./src/algorithms/MatrixChainMul.cpp)
+  - 输入：n个矩阵组成的矩阵链；矩阵链$U_{1\ldots n}$对应的维度数分别为$p_0, p_1, \ldots ,p_n$，$U_i$的维度为$p_{i-1} * p_i$
+  - 输出：找到一种加括号的方式，以确定矩阵链乘法的计算顺序，使得最小化矩阵链标量乘法的次数
+  - $dp[i, j] = dp[i, k] + dp[k + 1, j] + p_{i-1}p_kp_j$，$dp[i, j]$表示计算矩阵链$U_{i\ldots j}$所需标量乘法的最小次数
+  - 时间复杂度：$O(n^3)$
+
+---
+
 ​	
