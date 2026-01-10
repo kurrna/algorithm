@@ -36,7 +36,7 @@
 
 ## 字符串与检索
 - [x] [最长公共子序列（LCS）](./src/algorithms/LongestCommonSequence.cpp)
-- [ ] 最长公共子串（Longest Common Substring）
+- [x] [最长公共子串（Longest Common Substring）](./src/algorithms/LongestCommonSubstring.cpp)
 
 ## 图算法（核心）
 - [ ] 图基础（Graph 表示与基本性质）

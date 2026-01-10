@@ -199,7 +199,7 @@
 
 #### Lecture10_0-1_Knapsack
 
-- 0-1背包问题
+- [0-1背包问题](./src/algorithms/ZeroOneKnapsack.cpp)
   - 输入：n个商品组成集合O，每个商品有两个属性$v_i$和$p_i$，分别表示体积和价格；背包容量为C
   - 输出：求解一个商品子集，总价值最高且容量小于C
   - 蛮力枚举：$O(2^n)$
@@ -216,17 +216,22 @@
 
 #### Lecture11_MaxSubArrayII
 
-- 最大子数组（动态规划）
+- [最大子数组](./src/algorithms/MaxSubArray.cpp)（动态规划）
   - 时间复杂度：$O(n)$
 
 ---
 
 #### Lecture12_Longest_Common_Sequence
 
-- 最长公共子序列问题
+- [最长公共子序列问题](./src/algorithms/LongestCommonSequence.cpp)
   - 给定两个序列X和Y，求其最大公共子序列（即去掉任意多个元素剩下的部分）
   - 使用追踪数组Rec记录这一步是"L", "U"还是"LU"
   - 时间复杂度：$O(n * m)$
 
 ---
 
+#### Lecture13_Longest_Common_Substring
+
+- [最长公共子串问题](./src/algorithms/LongestCommonSubstring.cpp)
+  - 与最大公共子序列不同的是不需要求解子问题
+  - 时间复杂度：$O(n * m)$
