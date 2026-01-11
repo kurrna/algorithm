@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/11.
 //
 
-#include "../RodCutting.hpp"
+#include "RodCutting.hpp"
 
 std::vector<int> RodCutting::rec;
 

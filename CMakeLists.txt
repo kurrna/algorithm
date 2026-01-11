@@ -7,17 +7,17 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(${PROJECT_SOURCE_DIR})
 
 # 收集所有算法源文件
-file(GLOB ALGORITHM_SOURCES
+file(GLOB_RECURSE ALGORITHM_SOURCES
         "src/algorithms/*.cpp"
 )
 
 # 收集所有算法头文件
-file(GLOB ALGORITHM_HEADERS
+file(GLOB_RECURSE ALGORITHM_HEADERS
         "src/algorithms/*.hpp"
 )
 
 # 收集所有测试头文件
-file(GLOB TEST_HEADERS
+file(GLOB_RECURSE TEST_HEADERS
         "src/tests/*.hpp"
 )
 

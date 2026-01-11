@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/10.
 //
 
-#include "../HeapSort.hpp"
+#include "HeapSort.hpp"
 #include <algorithm>
 
 void HeapSort::solve(std::vector<int> &vec) {

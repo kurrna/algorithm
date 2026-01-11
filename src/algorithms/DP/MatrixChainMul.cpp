@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/11.
 //
 
-#include "../MatrixChainMul.hpp"
+#include "MatrixChainMul.hpp"
 #include <climits>
 
 // 定义静态成员

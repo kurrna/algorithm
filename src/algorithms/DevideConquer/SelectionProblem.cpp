@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/10.
 //
 
-#include "../SelectionProblem.hpp"
+#include "SelectionProblem.hpp"
 #include <cstdlib>
 
 int SelectionProblem::solve(std::vector<int> &vec, int k) {
