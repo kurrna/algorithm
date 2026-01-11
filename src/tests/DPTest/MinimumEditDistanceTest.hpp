@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_MINIMUMEDITDISTANCETEST_HPP
 #define ALGORITHM_MINIMUMEDITDISTANCETEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/MinimumEditDistance.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DP/MinimumEditDistance.hpp"
 
 class MinimumEditDistanceTest : public TestBase {
 public:

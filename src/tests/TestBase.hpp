@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cmath>
 
 /**
  * 测试基类
@@ -30,11 +31,40 @@ protected:
         std::cout << std::endl;
     }
 
-    // 对拍功能：验证向量结果
+    // 对拍功能：验证向量结果（通用模板）
     template<typename T>
     static bool assertVectorEquals(const std::vector<T>& actual, const std::vector<T>& expected,
                                    const std::string& testName = "测试") {
         const bool passed = (actual == expected);
+
+        std::cout << testName << ": ";
+        if (passed) {
+            std::cout << "✓ 通过" << std::endl;
+        } else {
+            std::cout << "✗ 失败" << std::endl;
+            std::cout << "  期望输出: ";
+            printVector(expected);
+            std::cout << "  实际输出: ";
+            printVector(actual);
+        }
+
+        return passed;
+    }
+
+    // 对拍功能：验证 double 向量（带容差比较）
+    static bool assertVectorEquals(const std::vector<double>& actual, const std::vector<double>& expected,
+                                   const std::string& testName = "测试") {
+        const double EPS = 1e-6;
+        bool passed = true;
+        if (actual.size() != expected.size()) passed = false;
+        else {
+            for (size_t i = 0; i < actual.size(); ++i) {
+                if (std::fabs(actual[i] - expected[i]) > EPS) {
+                    passed = false;
+                    break;
+                }
+            }
+        }
 
         std::cout << testName << ": ";
         if (passed) {
@@ -71,6 +101,18 @@ protected:
     // 打印向量内容
     template<typename T>
     static void printVector(const std::vector<T>& vec) {
+        std::cout << "[";
+        for (size_t i = 0; i < vec.size(); i++) {
+            std::cout << vec[i];
+            if (i < vec.size() - 1) {
+                std::cout << ", ";
+            }
+        }
+        std::cout << "]" << std::endl;
+    }
+
+    // 打印 double 向量（保留一定小数以便阅读）
+    static void printVector(const std::vector<double>& vec) {
         std::cout << "[";
         for (size_t i = 0; i < vec.size(); i++) {
             std::cout << vec[i];

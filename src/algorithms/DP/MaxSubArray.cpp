@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/11.
 //
 
-#include "MaxSubArray.hpp"
+#include "../MaxSubArray.hpp"
 
 int MaxSubArray::solve(const std::vector<int> &vec) {
     Rec.clear();

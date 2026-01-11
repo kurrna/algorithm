@@ -25,19 +25,19 @@
 
 ## 数学与代数工具
 - [x] *多项式乘法（Polynomial Multiplication）
-- [x] [矩阵链乘法（Matrix Chain Mul）](./src/algorithms/MatrixChainMul.cpp)
+- [x] [矩阵链乘法（Matrix Chain Mul）](src/algorithms/DP/MatrixChainMul.cpp)
 
 ## 贪心与动态规划基础
 - [ ] 活动选择问题（Activity Selection）
 - [ ] 霍夫曼编码（Huffman Coding）
 - [ ] 分数背包（Fractional Knapsack）
-- [x] [0-1 背包（0-1 Knapsack）](./src/algorithms/ZeroOneKnapsack.cpp)
-- [x] [最小编辑距离（Minimum Edit Distance）](./src/algorithms/MinimumEditDistance.cpp)
-- [x] [钢条切割（Rod Cutting）](./src/algorithms/RodCutting.cpp)
+- [x] [0-1 背包（0-1 Knapsack）](src/algorithms/DP/ZeroOneKnapsack.cpp)
+- [x] [最小编辑距离（Minimum Edit Distance）](src/algorithms/DP/MinimumEditDistance.cpp)
+- [x] [钢条切割（Rod Cutting）](src/algorithms/DP/RodCutting.cpp)
 
 ## 字符串与检索
-- [x] [最长公共子序列（LCS）](./src/algorithms/LongestCommonSequence.cpp)
-- [x] [最长公共子串（Longest Common Substring）](./src/algorithms/LongestCommonSubstring.cpp)
+- [x] [最长公共子序列（LCS）](src/algorithms/DP/LongestCommonSequence.cpp)
+- [x] [最长公共子串（Longest Common Substring）](src/algorithms/DP/LongestCommonSubstring.cpp)
 
 ## 图算法（核心）
 - [ ] 图基础（Graph 表示与基本性质）

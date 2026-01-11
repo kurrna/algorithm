@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_RODCUTTINGTEST_HPP
 #define ALGORITHM_RODCUTTINGTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/RodCutting.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DP/RodCutting.hpp"
 
 class RodCuttingTest : public TestBase {
 public:

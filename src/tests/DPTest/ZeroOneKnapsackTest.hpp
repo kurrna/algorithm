@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_ZEROONEKNAPSACKTEST_HPP
 #define ALGORITHM_ZEROONEKNAPSACKTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/ZeroOneKnapsack.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DP/ZeroOneKnapsack.hpp"
 
 class ZeroOneKnapsackTest : public TestBase {
 public:

@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_LONGESTCOMMONSUBSTRINGTEST_HPP
 #define ALGORITHM_LONGESTCOMMONSUBSTRINGTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/LongestCommonSubstring.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DP/LongestCommonSubstring.hpp"
 
 class LongestCommonSubstringTest : public TestBase {
 public:

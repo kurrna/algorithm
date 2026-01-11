@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/11.
 //
 
-#include "MinimumEditDistance.hpp"
+#include "../MinimumEditDistance.hpp"
 #include <vector>
 #include <algorithm>
 

@@ -2,7 +2,7 @@
 // Created by Kurna on 2026/1/11.
 //
 
-#include "LongestCommonSubstring.hpp"
+#include "../LongestCommonSubstring.hpp"
 
 #include <vector>
 

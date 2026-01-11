@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_LONGESTCOMMONSEQUENCETEST_HPP
 #define ALGORITHM_LONGESTCOMMONSEQUENCETEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/LongestCommonSequence.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DP/LongestCommonSequence.hpp"
 
 class LongestCommonSequenceTest : public TestBase {
 public:

@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_MATRIXCHAINMULTEST_HPP
 #define ALGORITHM_MATRIXCHAINMULTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/MatrixChainMul.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DP/MatrixChainMul.hpp"
 
 class MatrixChainMulTest : public TestBase {
 public:

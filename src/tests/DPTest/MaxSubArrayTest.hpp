@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_MAXSUBARRAYTEST_HPP
 #define ALGORITHM_MAXSUBARRAYTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/MaxSubArray.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/DP/MaxSubArray.hpp"
 
 class MaxSubArrayTest : public TestBase {
 public:
