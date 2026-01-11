@@ -199,7 +199,7 @@
 
 #### Lecture10_0-1_Knapsack
 
-- [0-1背包问题](./src/algorithms/ZeroOneKnapsack.cpp)
+- [0-1背包问题](src/algorithms/DP/ZeroOneKnapsack.cpp)
   - 输入：n个商品组成集合O，每个商品有两个属性$v_i$和$p_i$，分别表示体积和价格；背包容量为C
   - 输出：求解一个商品子集，总价值最高且容量小于C
   - 蛮力枚举：$O(2^n)$
@@ -216,14 +216,14 @@
 
 #### Lecture11_MaxSubArrayII
 
-- [最大子数组](./src/algorithms/MaxSubArray.cpp)（动态规划）
+- [最大子数组](src/algorithms/DP/MaxSubArray.cpp)（动态规划）
   - 时间复杂度：$O(n)$
 
 ---
 
 #### Lecture12_Longest_Common_Sequence
 
-- [最长公共子序列问题](./src/algorithms/LongestCommonSequence.cpp)
+- [最长公共子序列问题](src/algorithms/DP/LongestCommonSequence.cpp)
   - 给定两个序列X和Y，求其最大公共子序列（即去掉任意多个元素剩下的部分）
   - 使用追踪数组Rec记录这一步是"L", "U"还是"LU"
   - 时间复杂度：$O(n * m)$
@@ -232,7 +232,7 @@
 
 #### Lecture13_Longest_Common_Substring
 
-- [最长公共子串问题](./src/algorithms/LongestCommonSubstring.cpp)
+- [最长公共子串问题](src/algorithms/DP/LongestCommonSubstring.cpp)
   - 与最大公共子序列不同的是不需要求解子问题
   - 时间复杂度：$O(n * m)$
 
@@ -240,7 +240,7 @@
 
 #### Lecture14_MED
 
-- [编辑距离问题](./src/algorithms/MinimumEditDistance.cpp)
+- [编辑距离问题](src/algorithms/DP/MinimumEditDistance.cpp)
   - 使用$Rec[i,j]$保存子问题来源，上侧"U"则操作为删除s[i]，左侧"L"则操作为插入t[j]，对角线"D"则为用t[j]替换s[i]。最后根据数组Rec输出最少编辑操作。
   - 时间复杂度：$O(n * m)$
 
@@ -248,7 +248,7 @@
 
 #### Lecture15_RodCutting
 
-- [钢条切割问题](./src/algorithms/RodCutting.cpp)
+- [钢条切割问题](src/algorithms/DP/RodCutting.cpp)
   - 输入钢条价格表$p[1\ldots n]$，输出最大收益$C[n]$与钢条切割方案
   - 使用rec[i]记录长度为i的钢条切割的第一段应该是多少
   - 时间复杂度：$O(n^2)$
@@ -257,7 +257,7 @@
 
 #### Lecture16_MatrixMul
 
-- [矩阵链乘法（Matrix Chain Mul）](./src/algorithms/MatrixChainMul.cpp)
+- [矩阵链乘法（Matrix Chain Mul）](src/algorithms/DP/MatrixChainMul.cpp)
   - 输入：n个矩阵组成的矩阵链；矩阵链$U_{1\ldots n}$对应的维度数分别为$p_0, p_1, \ldots ,p_n$，$U_i$的维度为$p_{i-1} * p_i$
   - 输出：找到一种加括号的方式，以确定矩阵链乘法的计算顺序，使得最小化矩阵链标量乘法的次数
   - $dp[i, j] = dp[i, k] + dp[k + 1, j] + p_{i-1}p_kp_j$，$dp[i, j]$表示计算矩阵链$U_{i\ldots j}$所需标量乘法的最小次数
@@ -265,4 +265,16 @@
 
 ---
 
-​	
+### 三、贪心策略篇
+
+#### Lecture17_Frac_Knapsack
+
+- [部分背包问题](./src/algorithms/FracKnapsack.cpp)
+  - 输入：n个商品组成集合O，每个商品有两个属性$v_i$和$p_i$，分别表示体积和价格；背包容量为C
+  - 输出：求解一个解决方案$S=\{x_i|1\le i \le n, 0\le x_i \le 1\}$（其中当$x_i$只能取0或1时变为0-1背包问题）在约束条件下使得$\sum_{x_i \in S} x_i * p_i$最大
+  - 与0-1背包区别为物品是否可分
+  - 贪心策略：最高性价比优先，按性价比进行排序并初始化
+  - 时间复杂度：$O(n\log(n))$
+
+---
+
