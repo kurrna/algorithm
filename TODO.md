@@ -52,7 +52,7 @@
 - [ ] Dijkstra 最短路（Dijkstra）
 - [ ] Bellman-Ford（Bellman-Ford）
 - [ ] Floyd-Warshall（All-pairs shortest paths）
-- [ ] Prim 最小生成树（Prim）
+- [x] [Prim 最小生成树（Prim）](./src/algori)
 - [ ] Kruskal 最小生成树（Kruskal）
 
 ## 其他核心主题
