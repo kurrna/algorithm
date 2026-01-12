@@ -48,8 +48,8 @@
 - [x] [拓扑排序（Topological Sort）](./src/algorithms/TopoSort.cpp)
 - [x] [图中的环检测（Cycle detection）](./src/algorithms/Cycle.cpp)
 
-- [ ] [最大二分匹配问题（匈牙利算法）（Matching）](./src/algorithms/Matching.cpp)
-- [ ] 最大流（Max Flow）
+- [x] [最大二分匹配问题（匈牙利算法）（Matching）](./src/algorithms/Matching.cpp)
+- [x] [最大流（Max Flow）](./src/algorithms/MaxFlow.cpp)
 
 ## 最短路径与最小生成树
 - [x] [Dijkstra 最短路（Dijkstra）](./src/algorithms/Dijkstra.cpp)
