@@ -50,7 +50,7 @@
 
 ## 最短路径与最小生成树
 - [x] [Dijkstra 最短路（Dijkstra）](./src/algorithms/Dijkstra.cpp)
-- [ ] Bellman-Ford（Bellman-Ford）
+- [x] [Bellman-Ford（Bellman-Ford）](./src/algorithms/BellmanFord.cpp)
 - [ ] Floyd-Warshall（All-pairs shortest paths）
 - [x] [Prim 最小生成树（Prim）](./src/algori)
 - [x] [Kruskal 最小生成树（Kruskal）](./src/algorithms/Kruskal.cpp)
