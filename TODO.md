@@ -39,13 +39,13 @@
 - [x] [最长公共子序列（LCS）](src/algorithms/DP/LongestCommonSequence.cpp)
 - [x] [最长公共子串（Longest Common Substring）](src/algorithms/DP/LongestCommonSubstring.cpp)
 
-## 图算法（核心）
+## 图算法
 - [x] 图的概念
 - [x] [广度优先搜索（BFS）](./src/algorithms/BFS.cpp)
 - [x] [深度优先搜索（DFS）](./src/algorithms/DFS.cpp)
-- [x] [有向图的 DFS](./src/algorithms/DirectedDFS.cpp) 
-- [ ] 强连通分量（Directed DFS / SCC）
-- [x] [拓扑排序（Topological Sort）](./src/algorithms/TopoSort.c)
+- [x] [有向图的 DFS（Directed DFS）](./src/algorithms/DirectedDFS.cpp) 
+- [x] [强连通分量（SCC）](./src/algorithms/SCC.cpp)
+- [x] [拓扑排序（Topological Sort）](./src/algorithms/TopoSort.cpp)
 - [x] [图中的环检测（Cycle detection）](./src/algorithms/Cycle.cpp)
 
 ## 最短路径与最小生成树
