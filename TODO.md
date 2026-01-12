@@ -28,7 +28,7 @@
 - [x] [矩阵链乘法（Matrix Chain Mul）](src/algorithms/DP/MatrixChainMul.cpp)
 
 ## 贪心与动态规划基础
-- [ ] 活动选择问题（Activity Selection）
+- [x] [活动选择问题（Activity Selection）](./src/algorithms/ActivitySelection.cpp)
 - [x] [霍夫曼编码（Huffman Coding）](./src/algorithms/HuffmanCode.cpp)
 - [x] [分数背包（Fractional Knapsack）](./src/algorithms/FracKnapsack.cpp)
 - [x] [0-1 背包（0-1 Knapsack）](src/algorithms/DP/ZeroOneKnapsack.cpp)
