@@ -53,7 +53,7 @@
 - [ ] Bellman-Ford（Bellman-Ford）
 - [ ] Floyd-Warshall（All-pairs shortest paths）
 - [x] [Prim 最小生成树（Prim）](./src/algori)
-- [ ] Kruskal 最小生成树（Kruskal）
+- [x] [Kruskal 最小生成树（Kruskal）](./src/algorithms/Kruskal.cpp)
 
 ## 其他核心主题
 - [x] [计数排序（Counting Sort）](./src/algorithms/CountingSort.cpp)
