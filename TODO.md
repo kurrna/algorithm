@@ -45,7 +45,7 @@
 - [x] [深度优先搜索（DFS）](./src/algorithms/DFS.cpp)
 - [x] [有向图的 DFS](./src/algorithms/DirectedDFS.cpp) 
 - [ ] 强连通分量（Directed DFS / SCC）
-- [ ] 拓扑排序（Topological Sort）
+- [x] [拓扑排序（Topological Sort）](./src/algorithms/TopoSort.c)
 - [x] [图中的环检测（Cycle detection）](./src/algorithms/Cycle.cpp)
 
 ## 最短路径与最小生成树
