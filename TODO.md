@@ -48,6 +48,9 @@
 - [x] [拓扑排序（Topological Sort）](./src/algorithms/TopoSort.cpp)
 - [x] [图中的环检测（Cycle detection）](./src/algorithms/Cycle.cpp)
 
+- [ ] [最大二分匹配问题（匈牙利算法）（Matching）](./src/algorithms/Matching.cpp)
+- [ ] 最大流（Max Flow）
+
 ## 最短路径与最小生成树
 - [x] [Dijkstra 最短路（Dijkstra）](./src/algorithms/Dijkstra.cpp)
 - [x] [Bellman-Ford（Bellman-Ford）](./src/algorithms/BellmanFord.cpp)
@@ -79,8 +82,6 @@
 - [ ] Rabin-Karp
 - [ ] 回溯与搜索技巧（例如 N 皇后）
 - [ ] 位运算技巧、双指针技巧
-- [ ] 匈牙利/二分匹配与一般匹配（Matching）
-- [ ] 最大流（Max Flow / Ford-Fulkerson / Edmonds-Karp / Dinic）
 
 ## 其他算法
 - [x] [插入排序](./src/algorithms/InsertionSort.cpp)
