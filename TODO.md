@@ -51,7 +51,7 @@
 ## 最短路径与最小生成树
 - [x] [Dijkstra 最短路（Dijkstra）](./src/algorithms/Dijkstra.cpp)
 - [x] [Bellman-Ford（Bellman-Ford）](./src/algorithms/BellmanFord.cpp)
-- [ ] Floyd-Warshall（All-pairs shortest paths）
+- [x] [Floyd-Warshall（All-pairs shortest paths）](./src/algorithms/Floyd.cpp)
 - [x] [Prim 最小生成树（Prim）](./src/algori)
 - [x] [Kruskal 最小生成树（Kruskal）](./src/algorithms/Kruskal.cpp)
 
@@ -68,7 +68,7 @@
 - [ ] 二叉搜索树（BST）
 - [ ] AVL 树
 - [ ] 红黑树（Red-Black Tree）
-- [ ] 并查集（Union-Find）
+- [x] 并查集（Union-Find）
 - [ ] 线段树（Segment Tree）
 - [ ] 字典树（Trie）
 - [x] 堆（实现细节与优先队列进阶）
