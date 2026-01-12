@@ -125,16 +125,12 @@
       | $T(n)=\Theta(n^{log_b(a)}loglog(n))$ | $k = -1$ |
       | $T(n)=\Theta(n^{log_b(a)})$ | $k < -1$ |
 
----
-
 #### Lecture04_Maximum_Contiguous_Subarray
 
 - [最大子数组](src/algorithms/DevideConquer/MaximumContiguousSubarray.cpp)：最大子数组之和=max(以A[mid]结尾的最大子数组之和+以A[mid+1]开头的最大子数组之和，LEFT部分最大子数组，RIGHT部分最大子数组)
   - **分治法**：$O(n\log(n))$
   - 空间复杂度：$O(1)$
   - 【更快的算法】动态规划：$O(n)$
-
----
 
 #### Lecture05_Counting_Inversion
 
@@ -143,15 +139,11 @@
   - 分治法：$O(n\log(n))$
   - 空间复杂度：$O(n)$
 
----
-
 #### Lecture06_Polynomial_Multiplication
 
 - 多项式乘法：将系数数组A和B根据指数$\frac{n}{2}$的大小关系分别划分为两个子数组$A_0$，$A_1 * x^\frac{n}{2}$和$B_0$，$B_1 * \frac{n}{2}$，递归三次分别求解$A_0B_0$，$(A_0 + A_1)(B_0 + B_1)$，$A_1B_1$。这样两个交叉项可由三个结果计算出来。
   - 改进的分治法：$O(n^{\log(3)})$
   - 【更快的算法】快速傅里叶变换：$O(n\log(n))$
-
----
 
 #### Lecture07_Quicksort
 
@@ -161,16 +153,12 @@
   - 最坏情况：$O(n^2)$
   - 随机主元期望时间复杂度：$O(nlog(n))$
 
----
-
 #### Lecture08_Selection_Problem
 
 - [次序选择问题](src/algorithms/DevideConquer/SelectionProblem.cpp)：求数组中第k小的元素，不必对所有元素排序，选取一个主元进行位置划分后左边的元素有$pivotIdx - start$个，若$k-1 < pivotIdx - start + 1$，则数组第k小元素在左边，若大于则在右边。
   - 最好情况：$O(n)$
   - 最坏情况：$O(n^2)$
   - 随机主元期望时间复杂度：$O(n)$
-
----
 
 #### Lecture09_HeapSort_LowerBound
 
@@ -212,14 +200,10 @@
   - 自底向上：初始化$P[i, 0] = 0, P[0, c] = 0$，依次求解问题
   - 决策过程：回溯追踪最优方案，使用$Rec[i, c]$记录决策过程
 
----
-
 #### Lecture11_MaxSubArrayII
 
 - [最大子数组](src/algorithms/DP/MaxSubArray.cpp)（动态规划）
   - 时间复杂度：$O(n)$
-
----
 
 #### Lecture12_Longest_Common_Sequence
 
@@ -228,15 +212,11 @@
   - 使用追踪数组Rec记录这一步是"L", "U"还是"LU"
   - 时间复杂度：$O(n * m)$
 
----
-
 #### Lecture13_Longest_Common_Substring
 
 - [最长公共子串问题](src/algorithms/DP/LongestCommonSubstring.cpp)
   - 与最大公共子序列不同的是不需要求解子问题
   - 时间复杂度：$O(n * m)$
-
----
 
 #### Lecture14_MED
 
@@ -244,16 +224,12 @@
   - 使用$Rec[i,j]$保存子问题来源，上侧"U"则操作为删除s[i]，左侧"L"则操作为插入t[j]，对角线"D"则为用t[j]替换s[i]。最后根据数组Rec输出最少编辑操作。
   - 时间复杂度：$O(n * m)$
 
----
-
 #### Lecture15_RodCutting
 
 - [钢条切割问题](src/algorithms/DP/RodCutting.cpp)
   - 输入钢条价格表$p[1\ldots n]$，输出最大收益$C[n]$与钢条切割方案
   - 使用rec[i]记录长度为i的钢条切割的第一段应该是多少
   - 时间复杂度：$O(n^2)$
-
----
 
 #### Lecture16_MatrixMul
 
@@ -276,5 +252,11 @@
   - 贪心策略：最高性价比优先，按性价比进行排序并初始化
   - 时间复杂度：$O(n\log(n))$
 
----
+#### Lecture18_HuffmanCode
 
+- [最优前缀码问题](./src/algorithms/HuffmanCode.cpp)
+  - 输入：字符数n以及各个字符的频数$F = <f_1, f_2, \ldots, f_n>$
+  - 输出：解析结果唯一的二进制编码方案C，使得字符串总长$\sum_{i=1}^{n} |c_i|*f_i$最小
+  - 贪心策略1：优先处理高频字符，将字符频数从大到小排序，依次编码高频字符
+  - **贪心策略2**：优先处理低频字符，选择两个最小的频数$f_1, f_2$，合并为$f' = f_1 + f_2$后加入F，重复合并过程（霍夫曼编码）
+  - 时间复杂度：$O(nlog(n))$
