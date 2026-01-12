@@ -43,7 +43,8 @@
 - [x] 图的概念
 - [x] [广度优先搜索（BFS）](./src/algorithms/BFS.cpp)
 - [x] [深度优先搜索（DFS）](./src/algorithms/DFS.cpp)
-- [ ] 有向图的 DFS 与强连通分量（Directed DFS / SCC）
+- [x] [有向图的 DFS](./src/algorithms/DirectedDFS.cpp) 
+- [ ] 强连通分量（Directed DFS / SCC）
 - [ ] 拓扑排序（Topological Sort）
 - [ ] 图中的环检测（Cycle detection）
 
