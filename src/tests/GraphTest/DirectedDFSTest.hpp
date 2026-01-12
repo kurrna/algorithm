@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_DIRECTEDDFSTEST_HPP
 #define ALGORITHM_DIRECTEDDFSTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/DirectedDFS.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/DirectedDFS.hpp"
 
 class DirectedDFSTest : public TestBase {
 public:

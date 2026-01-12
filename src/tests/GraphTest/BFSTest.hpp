@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_BFSTEST_HPP
 #define ALGORITHM_BFSTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/BFS.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/BFS.hpp"
 
 class BFSTest : public TestBase {
 public:

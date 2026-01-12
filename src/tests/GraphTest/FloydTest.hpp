@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_FLOYDTEST_HPP
 #define ALGORITHM_FLOYDTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/Floyd.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/Floyd.hpp"
 
 class FloydTest : public TestBase {
 public:

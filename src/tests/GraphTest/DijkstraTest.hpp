@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_DIJKSTRATEST_HPP
 #define ALGORITHM_DIJKSTRATEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/Dijkstra.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/Dijkstra.hpp"
 #include <vector>
 
 /**

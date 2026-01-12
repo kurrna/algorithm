@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_MAXFLOWTEST_HPP
 #define ALGORITHM_MAXFLOWTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/MaxFlow.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/MaxFlow.hpp"
 
 class MaxFlowTest : public TestBase {
 public:

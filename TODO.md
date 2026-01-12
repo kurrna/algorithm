@@ -41,22 +41,22 @@
 
 ## 图算法
 - [x] 图的概念
-- [x] [广度优先搜索（BFS）](./src/algorithms/BFS.cpp)
-- [x] [深度优先搜索（DFS）](./src/algorithms/DFS.cpp)
-- [x] [有向图的 DFS（Directed DFS）](./src/algorithms/DirectedDFS.cpp) 
-- [x] [强连通分量（SCC）](./src/algorithms/SCC.cpp)
-- [x] [拓扑排序（Topological Sort）](./src/algorithms/TopoSort.cpp)
-- [x] [图中的环检测（Cycle detection）](./src/algorithms/Cycle.cpp)
+- [x] [广度优先搜索（BFS）](src/algorithms/Graph/BFS.cpp)
+- [x] [深度优先搜索（DFS）](src/algorithms/Graph/DFS.cpp)
+- [x] [有向图的 DFS（Directed DFS）](src/algorithms/Graph/DirectedDFS.cpp) 
+- [x] [强连通分量（SCC）](src/algorithms/Graph/SCC.cpp)
+- [x] [拓扑排序（Topological Sort）](src/algorithms/Graph/TopoSort.cpp)
+- [x] [图中的环检测（Cycle detection）](src/algorithms/Graph/Cycle.cpp)
 
-- [x] [最大二分匹配问题（匈牙利算法）（Matching）](./src/algorithms/Matching.cpp)
-- [x] [最大流（Max Flow）](./src/algorithms/MaxFlow.cpp)
+- [x] [最大二分匹配问题（匈牙利算法）（Matching）](src/algorithms/Graph/Matching.cpp)
+- [x] [最大流（Max Flow）](src/algorithms/Graph/MaxFlow.cpp)
 
 ## 最短路径与最小生成树
-- [x] [Dijkstra 最短路（Dijkstra）](./src/algorithms/Dijkstra.cpp)
-- [x] [Bellman-Ford（Bellman-Ford）](./src/algorithms/BellmanFord.cpp)
-- [x] [Floyd-Warshall（All-pairs shortest paths）](./src/algorithms/Floyd.cpp)
+- [x] [Dijkstra 最短路（Dijkstra）](src/algorithms/Graph/Dijkstra.cpp)
+- [x] [Bellman-Ford（Bellman-Ford）](src/algorithms/Graph/BellmanFord.cpp)
+- [x] [Floyd-Warshall（All-pairs shortest paths）](src/algorithms/Graph/Floyd.cpp)
 - [x] [Prim 最小生成树（Prim）](./src/algori)
-- [x] [Kruskal 最小生成树（Kruskal）](./src/algorithms/Kruskal.cpp)
+- [x] [Kruskal 最小生成树（Kruskal）](src/algorithms/Graph/Kruskal.cpp)
 
 ## 其他核心主题
 - [x] [计数排序（Counting Sort）](./src/algorithms/CountingSort.cpp)

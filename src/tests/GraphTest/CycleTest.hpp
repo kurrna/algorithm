@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_CYCLETEST_HPP
 #define ALGORITHM_CYCLETEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/Cycle.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/Cycle.hpp"
 
 class CycleTest : public TestBase {
 public:

@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_SCCTEST_HPP
 #define ALGORITHM_SCCTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/SCC.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/SCC.hpp"
 
 class SCCTest : public TestBase {
 public:

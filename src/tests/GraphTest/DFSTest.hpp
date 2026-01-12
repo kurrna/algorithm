@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_DFSTEST_HPP
 #define ALGORITHM_DFSTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/DFS.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/DFS.hpp"
 
 class DFSTest : public TestBase {
 public:

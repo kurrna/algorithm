@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_MATCHINGTEST_HPP
 #define ALGORITHM_MATCHINGTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/Matching.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/Matching.hpp"
 
 class MatchingTest : public TestBase {
 public:

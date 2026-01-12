@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_BELLMANFORDTEST_HPP
 #define ALGORITHM_BELLMANFORDTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/BellmanFord.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/BellmanFord.hpp"
 
 class BellmanFordTest : public TestBase {
 public:

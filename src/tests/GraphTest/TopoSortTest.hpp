@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_TOPOSORTTEST_HPP
 #define ALGORITHM_TOPOSORTTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/TopoSort.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/TopoSort.hpp"
 
 class TopoSortTest : public TestBase {
 public:

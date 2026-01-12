@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_KRUSKALTEST_HPP
 #define ALGORITHM_KRUSKALTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/Kruskal.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/Kruskal.hpp"
 
 class KruskalTest : public TestBase {
 public:

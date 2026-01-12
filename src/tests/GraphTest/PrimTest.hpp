@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_PRIMTEST_HPP
 #define ALGORITHM_PRIMTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/Prim.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Graph/Prim.hpp"
 
 class PrimTest : public TestBase {
 public:

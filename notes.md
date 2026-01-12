@@ -322,7 +322,7 @@
   
 #### Lecture21_BFS
 
-- [广度优先搜索](./src/algorithms/BFS.cpp)
+- [广度优先搜索](src/algorithms/Graph/BFS.cpp)
   - 输入：图G，源点root
   - 输出：前驱数组$pred[]$，距离数组$dist[]$
   - 时间复杂度：$O(V+E)$
@@ -330,7 +330,7 @@
 
 #### Lecture22_DFS
 
-- [深度优先搜索](./src/algorithms/DFS.cpp)
+- [深度优先搜索](src/algorithms/Graph/DFS.cpp)
   - 辅助数组$d$：顶点发现的时刻
   - 辅助数组$f$：顶点完成的时刻
   - 时间复杂度：$O(V+E)$
@@ -351,7 +351,7 @@
 
 #### Lecture23_Directed_DFS
 
-- [有向图的深度优先搜索](./src/algorithms/DirectedDFS.cpp)
+- [有向图的深度优先搜索](src/algorithms/Graph/DirectedDFS.cpp)
   - 无向图：无向图无论DFS还是BFS，优先树的形状取决于搜索顺序，数量为一棵（连通无向图搜索会遍历所有节点）
     - 无向图的非树边一定是后向边
   - 有向图：优先树（森林）的形状取决于搜索顺序，树的数量取决于搜索顺序
@@ -362,7 +362,7 @@
 
 #### Lecture24_Cycle
 
-- [有向图中环路的存在性](./src/algorithms/Cycle.cpp)
+- [有向图中环路的存在性](src/algorithms/Graph/Cycle.cpp)
   - 时间复杂度：$O(V+E)$
   - 有向图存在环路$<=>$搜索时出现后向边
 
@@ -370,7 +370,7 @@
 
 - 有向无环图DAG：表示事件发生的先后顺序
 
-- [拓扑排序](./src/algorithms/TopoSort.cpp)
+- [拓扑排序](src/algorithms/Graph/TopoSort.cpp)
   - 输入：有向无环图$G=<V, E>$
   - 输出：图顶点$V$的拓扑序S，满足：对任意有向边$(u, v)$，排序后u在v之前
   - 有向图顶点的度分为入度和出度，若顶点入度为0，所对应事件无制约可直接完成
@@ -384,7 +384,7 @@
 
 #### Lecture26_SCC
 
-- [强连通分量（Strongly Connected Components)](./src/algorithms/SCC.cpp)
+- [强连通分量（Strongly Connected Components)](src/algorithms/Graph/SCC.cpp)
   - 强连通分量中任意两点相互可达且满足最大性（加入新顶点则不保证相互可达）
   - 任意两强连通分量不相交
   - 算法思想：
@@ -435,7 +435,7 @@
     - 给定带权无向连通图，A为边集E的一个子集，且A包含在G的某棵在图G的某棵最小生成树中
     - 若割$(S,V-S)$是图G中**不妨害边集A**的任意割，且边$(u, v)$是横跨该割的轻边
     - 则对于边集A，边$(u, v)$是其**安全边**
-- [Prim 最小生成树](./src/algorithms/Prim.cpp)
+- [Prim 最小生成树](src/algorithms/Graph/Prim.cpp)
   - 算法思想：
     - 选择任意一个顶点，作为生成树的起始顶点
     - 保持边集A始终为一棵树，选择割$(V_A, V-V_A)$，其中$V_A$为树中顶点
@@ -474,7 +474,7 @@
   - 合并集合Union-Set：合并两棵树$O(h)$
   - 树的高度与顶点规模$=>$$|V| \ge 2^h$
 
-- [Kruskal 最小生成树](./src/algorithms/Kruskal.cpp)
+- [Kruskal 最小生成树](src/algorithms/Graph/Kruskal.cpp)
   - 贪心策略：不形成环的最小边（判断所选边的顶点是否在一棵子树）
   - 使用不相交集合来判定和维护所选边的顶点是否在一棵子树
   - 时间复杂度
@@ -492,7 +492,7 @@
 
 #### Lecture29_Dijkstra
 
-- [Dijkstra 单源最短路径](./src/algorithms/Dijkstra.cpp)
+- [Dijkstra 单源最短路径](src/algorithms/Graph/Dijkstra.cpp)
   - 辅助数组
     - dist表示估计距离，初始化为INF
     - color表示顶点状态
@@ -518,7 +518,7 @@
 
 #### Lecture30_Bellman-Ford
 
-- [Bellman-Ford 单源最短路径](./src/algorithms/BellmanFord.cpp)
+- [Bellman-Ford 单源最短路径](src/algorithms/Graph/BellmanFord.cpp)
   - 存在负权边时，Dijkstra算法不可用
   - 输出：源点到其他顶点的最短距离和最短路径、或存在源点可达的负环
   - 时间复杂度：$O(V*E)$，总共松弛$O(V*E)$次
@@ -529,7 +529,7 @@
 
 #### Lecture31_Floyd
 
-- [Floyd 所有点对最短路径](./src/algorithms/Floyd.cpp)
+- [Floyd 所有点对最短路径](src/algorithms/Graph/Floyd.cpp)
   - 输出：任意点对(u, v)之间的最短路径
   - 若使用Dijkstra依次求解所有问题则存在重叠的子问题，使用动态规划求解
   - 递推公式：$D[k, i, j]$表示前k个点选点经过时，i到j的最短距离
@@ -562,7 +562,7 @@
   - 一个匹配M是边集E的一个子集，该图G的每个顶点至多关联M的一条边
 - 交替路径（Alternating Path）
   - 从未匹配顶点触发，依次经过“非匹配边、匹配边……非匹配边”形成的路径
-- [最大二分匹配问题](./src/algorithms/Matching.cpp)
+- [最大二分匹配问题](src/algorithms/Graph/Matching.cpp)
   - 输入：二分图$G=<L, R, E>$
   - 输出：求出最大匹配$M=\{e_1,e_2,\ldots ,e_k\}$，使得满足$\forall i,j(i\neq j),e_i=(l_i,r_i),e_j=(l_j,r_j),有l_i\neq l_j,r_i\neq r_j$（即每个顶点最多关联一条边）
   - 匈牙利算法
@@ -603,7 +603,7 @@
   - 容量限制：对边$e \in E$，有$0 \le f(e) \le c(e)$
   - 流量守恒：对顶点$v \in V - \{s, t\}，\sum_{eintov}f(e) = \sum_{eoutofv}f(e)$（即进入某顶点v流量和等于流出此顶点流量和）
 
-- [最大流](./src/algorithms/MaxFlow.cpp)
+- [最大流](src/algorithms/Graph/MaxFlow.cpp)
   - 输入：有向图G流网络，源点s，汇点c
   - 输出：总流量$|f|$的最大值，在容量限制和流量守恒两条限制下
   - 时间复杂度：$O(E*|f^*|)$，每次循环后流的值至少增加1，最多循环$|f^*|$次
