@@ -49,7 +49,7 @@
 - [x] [图中的环检测（Cycle detection）](./src/algorithms/Cycle.cpp)
 
 ## 最短路径与最小生成树
-- [ ] Dijkstra 最短路（Dijkstra）
+- [x] [Dijkstra 最短路（Dijkstra）](./src/algorithms/Dijkstra.cpp)
 - [ ] Bellman-Ford（Bellman-Ford）
 - [ ] Floyd-Warshall（All-pairs shortest paths）
 - [x] [Prim 最小生成树（Prim）](./src/algori)
