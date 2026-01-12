@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_FRACKNAPSACKTEST_HPP
 #define ALGORITHM_FRACKNAPSACKTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/FracKnapsack.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Greedy/FracKnapsack.hpp"
 
 class FracKnapsackTest : public TestBase {
 public:

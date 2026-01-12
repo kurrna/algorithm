@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_HUFFMANCODETEST_HPP
 #define ALGORITHM_HUFFMANCODETEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/HuffmanCode.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Greedy/HuffmanCode.hpp"
 
 class HuffmanCodeTest : public TestBase {
 public:

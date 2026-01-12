@@ -245,7 +245,7 @@
 
 #### Lecture17_Frac_Knapsack
 
-- [部分背包问题](./src/algorithms/FracKnapsack.cpp)
+- [部分背包问题](src/algorithms/Greedy/FracKnapsack.cpp)
   - 输入：n个商品组成集合O，每个商品有两个属性$v_i$和$p_i$，分别表示体积和价格；背包容量为C
   - 输出：求解一个解决方案$S=\{x_i|1\le i \le n, 0\le x_i \le 1\}$（其中当$x_i$只能取0或1时变为0-1背包问题）在约束条件下使得$\sum_{x_i \in S} x_i * p_i$最大
   - 与0-1背包区别为物品是否可分
@@ -254,7 +254,7 @@
 
 #### Lecture18_HuffmanCode
 
-- [最优前缀码问题](./src/algorithms/HuffmanCode.cpp)
+- [最优前缀码问题](src/algorithms/Greedy/HuffmanCode.cpp)
   - 输入：字符数n以及各个字符的频数$F = <f_1, f_2, \ldots, f_n>$
   - 输出：解析结果唯一的二进制编码方案C，使得字符串总长$\sum_{i=1}^{n} |c_i|*f_i$最小
   - 贪心策略1：优先处理高频字符，将字符频数从大到小排序，依次编码高频字符
@@ -263,8 +263,20 @@
 
 #### Lecture19_ActivitySelection
 
-- [活动选择问题](./src/algorithms/ActivitySelection.cpp)
+- [活动选择问题](src/algorithms/Greedy/ActivitySelection.cpp)
   - 输入：活动集合S，每个活动$a_i$的开始时间$s_i$和结束时间$f_i$，每个活动的权值$w_i$
   - 输出：活动集合的权重和最大子集使得时间不重叠
   - 存在重叠的子问题使用动态规划求解，$D[i]$为前i个活动中不冲突活动最大权重和，$p[i]为$a_i$开始前最后结束的活动
   - $D[i] = max\{D[p[i]] + w_i, D[i-1]\}$
+
+---
+
+### 算法策略小结
+
+独立子问题：分而治之
+
+重叠子问题：动态规划
+
+单一子问题：贪心算法
+
+---

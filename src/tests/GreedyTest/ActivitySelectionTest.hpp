@@ -1,8 +1,8 @@
 #ifndef ALGORITHM_ACTIVITYSELECTIONTEST_HPP
 #define ALGORITHM_ACTIVITYSELECTIONTEST_HPP
 
-#include "TestBase.hpp"
-#include "../algorithms/ActivitySelection.hpp"
+#include "../TestBase.hpp"
+#include "../../algorithms/Greedy/ActivitySelection.hpp"
 
 class ActivitySelectionTest : public TestBase {
 public:

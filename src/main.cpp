@@ -1,7 +1,7 @@
 #include "./tests/TestManager.hpp"
 
 // 在这里包含更多测试类
-#include "tests/ActivitySelectionTest.hpp"
+#include "tests/GreedyTest/ActivitySelectionTest.hpp"
 
 int main() {
     // 获取测试管理器实例
