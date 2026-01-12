@@ -40,8 +40,8 @@
 - [x] [最长公共子串（Longest Common Substring）](src/algorithms/DP/LongestCommonSubstring.cpp)
 
 ## 图算法（核心）
-- [ ] 图基础（Graph 表示与基本性质）
-- [ ] 广度优先搜索（BFS）
+- [x] 图的概念
+- [x] [广度优先搜索（BFS）](./src/algorithms)
 - [ ] 深度优先搜索（DFS）
 - [ ] 有向图的 DFS 与强连通分量（Directed DFS / SCC）
 - [ ] 拓扑排序（Topological Sort）
