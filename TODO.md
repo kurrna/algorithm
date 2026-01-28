@@ -60,8 +60,8 @@
 
 ## 其他核心主题
 - [x] [计数排序（Counting Sort）](./src/algorithms/CountingSort.cpp)
-- [ ] 布尔与复杂度（P vs NP / NP-Complete）
-- [ ] 最终复习/综合题目（Final Review）
+- [x] 布尔与复杂度（P vs NP / NP-Complete）
+- [x] 最终复习/综合题目（Final Review）
 
 ---
 
