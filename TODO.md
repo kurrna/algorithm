@@ -86,4 +86,5 @@
 ## 其他算法
 - [x] [插入排序](./src/algorithms/InsertionSort.cpp)
 - [x] [选择排序](./src/algorithms/SelectionSort.cpp)
+- [x] [桶排序](./src/algorithms/BucketSort.cpp)
 
